@@ -11,16 +11,12 @@ import { Component, Input, OnInit, Output, ViewEncapsulation, EventEmitter } fro
 export class AngularElementsWebPartComponent implements OnInit {
   @Input() description: string;
 
-  userName: string;
-
-  skills: string[];
-
-  employess: { name: string, technology: string }[];
-
   isValid = true;
-
+  userName: string;
+  skills: string[];
   community: string;
 
+  /** Image sources */
   pnpImageUrl: string;
   ptcImageUrl: string;
   defaultImageUrl: string;
@@ -30,6 +26,11 @@ export class AngularElementsWebPartComponent implements OnInit {
     lastName: string;
     email?: string;
   }
+  employess: {
+    name: string,
+    technology: string
+  }[];
+
   constructor() {
 
     this.userName = "Chandani Prajapati";
