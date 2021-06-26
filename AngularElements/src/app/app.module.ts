@@ -15,8 +15,7 @@ import { TodoComponent } from './components/todo/todo.component';
     BrowserModule,
     FormsModule
   ],
-  providers: [],
-  entryComponents: [AngularElementsWebPartComponent]
+  providers: []
 })
 export class AppModule {
   constructor(private injector: Injector) { }
